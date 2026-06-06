@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: financebank-portal
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements-production.txt && python manage.py collectstatic --noinput
+    startCommand: gunicorn financebank.wsgi:application --bind 0.0.0.0:$PORT
+    healthCheckPath: /
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: DEBUG
+        value: "False"
+      - key: ALLOWED_HOSTS
+        fromService:
+          type: web
+          property: host
+      - key: PYTHON_VERSION
+        value: "3.12.0"

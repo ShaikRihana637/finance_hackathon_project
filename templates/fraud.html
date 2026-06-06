@@ -1,0 +1,22 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="section fraud-section">
+    <h2>Fraud Detection System</h2>
+
+    <form>
+        <textarea placeholder="Paste SMS, call details, or suspicious link"></textarea>
+        <button>Check Fraud</button>
+    </form>
+
+    <div class="info-box">
+        <h3>Detection Types</h3>
+        <ul>
+            <li>Spam SMS Detection</li>
+            <li>Fake Call Detection</li>
+            <li>Fraud Link Detection</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

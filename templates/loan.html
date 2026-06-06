@@ -1,0 +1,26 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="section loan-section">
+    <h2>Loan Eligibility Prediction</h2>
+
+    <form>
+        <input type="number" placeholder="Monthly Income">
+        <input type="number" placeholder="Active Loans">
+        <input type="number" placeholder="Loans Cleared">
+        <input type="number" placeholder="Ongoing Loans">
+        <input type="number" placeholder="Registered Land in Sq.ft">
+        <button>Check Eligibility</button>
+    </form>
+
+    <div class="criteria">
+        <h3>Eligibility Conditions</h3>
+        <ul>
+            <li>Income above ₹10,000</li>
+            <li>Track active and cleared loans</li>
+            <li>Land ownership above 250 sq.ft</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

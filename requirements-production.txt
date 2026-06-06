@@ -1,0 +1,40 @@
+# Production-ready requirements file for Finance & Banking Portal
+
+# Core Django
+Django==4.2.0
+gunicorn==21.2.0
+
+# Environment & Configuration
+python-decouple==3.8
+whitenoise==6.5.0
+
+# Database (PostgreSQL for production)
+psycopg2-binary==2.9.9
+
+# Security & Authentication
+django-cors-headers==4.3.1
+
+# Error Tracking (Optional - Sentry integration)
+# sentry-sdk==1.39.1
+
+# Caching & Performance
+redis==5.0.0
+
+# Development & Testing (include for local development)
+# pytest==7.4.3
+# pytest-django==4.7.0
+# django-debug-toolbar==4.2.0
+
+# API & Data (if needed for future features)
+# djangorestframework==3.14.0
+# django-filter==23.4
+# drf-spectacular==0.26.5
+
+# Task Queue (Optional - for async tasks)
+# celery==5.3.4
+
+# Monitoring & Logging
+# django-health-check==3.17.0
+
+# Production utilities
+dj-database-url==2.1.0

@@ -1,0 +1,26 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="section expense-section">
+    <h2>Expense Tracking Dashboard</h2>
+
+    <form>
+        <input type="number" placeholder="Monthly Income">
+        <input type="number" placeholder="Total Expenses">
+        <button>Analyze</button>
+    </form>
+
+    <div class="summary">
+        <div class="summary-card">
+            <h3>Total Spending</h3>
+            <p>₹ 0</p>
+        </div>
+
+        <div class="summary-card">
+            <h3>Total Savings</h3>
+            <p>₹ 0</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
